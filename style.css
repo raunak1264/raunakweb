@@ -92,7 +92,7 @@ body
 }
 .navbar
 {
-	background-color: #000;
+	background: linear-gradient(to right, black, #270606);
 }
 .navbar-brand img
 {
@@ -129,7 +129,8 @@ body
 .progress-bar
 {
 	/* border-radius: 16px; */
-	background: #000 !important;
+	background: linear-gradient(to right, black, #270606);
+
 	border-bottom-right-radius: 60px;
 	border-top-left-radius: 60px;
 	border-top-right-radius: 20px;
@@ -174,8 +175,9 @@ timeline:before
 }
 .timeline h4
 {
-	background-color: #000;
+	/* background-color: #000; */
 	padding: 5px 0 5px 20px;
+	background: linear-gradient(to right, black, #270606);
 	color: #fff;
 	font-size: 15px;
 	/* border-radius: 16px; */
@@ -183,6 +185,7 @@ timeline:before
 	border-top-left-radius: 60px;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
+
 }
 .timeline h4 span
 {
@@ -269,7 +272,7 @@ timeline:before
 	padding-top: 5px;
 	margin-top: 5px;
 	color: #fff;
-	background: #000;
+	background: linear-gradient(to right, black, #270606);
 	border-bottom-right-radius: 50px;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 80px;
