@@ -45,15 +45,20 @@ body
 	color: #fff;
 	
 }
+/* .bi bi-arrow-down-circle
+{
+	height: 10;
+	width: 10;
+} */
 .scroll-btn
 {
 	bottom: 30px;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	border: 2px solid #fff;
+	border: 2px solid #fff; 
 	padding: 10px 10px 20px;
-	border-radious; 30px;
+	border-radious; 30px; 
 	
 }
 .scroll-bar span
