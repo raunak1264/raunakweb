@@ -289,3 +289,9 @@ timeline:before
 	width: 80px;
 	transition: 1s;
 }
+.whoami {
+	width: 100%;
+	margin: 0 auto;
+	text-align: justify;
+	/* word-spacing: -0.01em; */
+  }
