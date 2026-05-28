@@ -127,6 +127,12 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -207,20 +213,26 @@ ul { margin: 0; padding: 0; }
 }
 
 .nav-bar .navbar {
-  background: transparent;
+  background: rgba(10, 13, 18, 0.6);
+  backdrop-filter: blur(24px) saturate(1.8);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding: var(--space-3) var(--space-6);
-  transition: background var(--transition-base), backdrop-filter var(--transition-base);
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+[data-theme="light"] .nav-bar .navbar {
+  background: rgba(244, 246, 250, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .nav-bar.scrolled .navbar {
-  background: rgba(10, 13, 18, 0.92);
-  backdrop-filter: blur(20px) saturate(1.5);
-  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  background: rgba(10, 13, 18, 0.82);
   box-shadow: 0 1px 0 rgba(255,255,255,0.06), var(--shadow-md);
 }
 
 [data-theme="light"] .nav-bar.scrolled .navbar {
-  background: rgba(244, 246, 250, 0.92);
+  background: rgba(244, 246, 250, 0.82);
 }
 
 .navbar-brand img {

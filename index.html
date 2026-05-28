@@ -178,7 +178,7 @@
       </div>
 
       <div class="col-md-7 about-text-col reveal">
-        <h3 class="about-heading">Who Am I?</h3>
+        <h3 class="about-heading" id="who-am-i">Who Am I?</h3>
         <div class="whoami">
           <p>
             I am Raunak Kapoor, a highly experienced ServiceNow Architect with over 12 years in designing, implementing, and managing ServiceNow ITOM, ITSM, and CMDB solutions. I specialise in ServiceNow development, scripting, integrations, and automation, with a strong focus on optimising IT processes, enhancing platform performance, and driving digital transformation.
@@ -828,7 +828,7 @@
   <a href="#header"          class="bottom-nav-item" data-section="header">
     <i class="fa-solid fa-house"></i><span>Home</span>
   </a>
-  <a href="#about"           class="bottom-nav-item" data-section="about">
+  <a href="#who-am-i"        class="bottom-nav-item" data-section="about">
     <i class="fa-solid fa-user"></i><span>About</span>
   </a>
   <a href="#experience"      class="bottom-nav-item" data-section="experience">
@@ -1013,6 +1013,21 @@
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
   updateActiveNav();
+
+  /* ---- Bottom Nav: scroll with navbar offset ---- */
+  bottomNavItems.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var href = item.getAttribute('href');
+      if (!href || href.charAt(0) !== '#') return;
+      var target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
+      var navBar = document.querySelector('.nav-bar');
+      var offset = navBar ? navBar.offsetHeight + 16 : 80;
+      var targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
+    });
+  });
 
 })();
 </script>
