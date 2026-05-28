@@ -1889,6 +1889,11 @@ body:not([data-theme]) .education-section {
   body {
     padding-bottom: 56px;
   }
+
+  /* Raise back-to-top button above the bottom nav */
+  .back-to-top {
+    bottom: calc(56px + var(--space-4));
+  }
 }
 
 /* --- Small Mobile --- */
