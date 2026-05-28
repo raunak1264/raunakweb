@@ -1,376 +1,933 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Raunak kapoor</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raunak Kapoor — ServiceNow ITOM Architect with 12+ years designing enterprise-scale ITOM, ITSM, and CMDB solutions. CIS-Discovery Certified. Based in Bangalore, India.">
+  <meta name="keywords" content="ServiceNow, ITOM, CMDB, Discovery, Event Management, MID Server, IT Operations, Bangalore, ServiceNow Architect, CIS Discovery">
+  <meta name="author" content="Raunak Kapoor">
+  <meta property="og:title" content="Raunak Kapoor | ServiceNow ITOM Architect">
+  <meta property="og:description" content="ServiceNow Architect with 12+ years of experience in ITOM, ITSM, and CMDB. CIS-Discovery certified. Based in Bangalore, India.">
+  <meta property="og:image" content="img/3.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="img/logo6.png">
+  <link rel="apple-touch-icon" href="img/logo6.png">
+  <title>Raunak Kapoor | ServiceNow ITOM Architect</title>
+
+  <!-- DNS prefetch for CDN resources -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload hero image to eliminate LCP delay -->
+  <link rel="preload" href="img/3.png" as="image" fetchpriority="high">
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet (last = highest specificity) -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!---------------------Header Section---------------------->
-<section id="header">
-<div class="container text-center">
-<div class="user-box">
-<img src="img/3.png"> <!----Top Picture in circle--->
-<h1>Raunak kapoor</h1>
-<!-- <p>IT Professional</p> -->
-<!-- <a href="https://account.servicenow.com/personal-data/11ea57e13/ad56fbe80/a806e4a75/ae71eHNYJ/resume.html"/ target="_blank">ServiceNow Badges<a/> -->
-  <a href="#about">ServiceNow ITOM Architect<a/>
-</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<div class="nav-bar" id="mainNav">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#header">
+      <img src="img/logo6.png" alt="RK Logo" height="44" loading="eager">
+    </a>
+
+    <div class="nav-extras d-flex d-lg-none ms-auto me-2">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" id="themeIcon"></i>
+      </button>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.cakeresume.com/raunakkapoor" target="_blank" rel="noopener noreferrer">R&eacute;sum&eacute; &#8599;</a></li>
+      </ul>
+      <div class="nav-extras d-none d-lg-flex ms-3">
+        <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun" id="themeIconDesktop"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
 </div>
 
-<div class="scroll-btn">
-<div class="scroll-bar"><a href="#about"><span> </span></a></div>
-</div>
+<!-- ===================== HERO ===================== -->
+<section id="header">
+  <div class="container">
+    <div class="row align-items-center" style="min-height:100svh; min-height:100vh; padding-top:80px;">
+
+      <div class="col-lg-7 col-md-12 hero-content reveal">
+        <div class="hero-eyebrow">
+          <span class="status-dot"></span>
+          Available for New Roles &bull; Bangalore, India
+        </div>
+
+        <h1 class="hero-name">Raunak Kapoor</h1>
+        <p class="hero-title">ServiceNow ITOM Architect</p>
+        <p class="hero-bio">
+          12+ years architecting enterprise-scale ServiceNow ITOM, CMDB, and Discovery solutions across global organisations. CIS&#8209;Discovery Certified.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary-hero">
+            <i class="fa-solid fa-briefcase"></i> View My Work
+          </a>
+          <a href="https://drive.google.com/drive/folders/101HxyZVD9Mq6vqf6lcx9rrAVeZbwlXb_?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="btn-ghost-hero">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="hero-tags">
+          <span>ITOM</span>
+          <span>ITSM</span>
+          <span>CMDB</span>
+          <span>Discovery</span>
+          <span>CIS Certified</span>
+          <span>MID Server</span>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-12 hero-photo-col reveal">
+        <div class="hero-photo-wrapper">
+          <img src="img/3.png" class="hero-photo" alt="Raunak Kapoor"
+               loading="eager" fetchpriority="high" width="380" height="380">
+          <div class="hero-badge-overlay">
+            <a href="https://www.credly.com/badges/e5245bd7-6861-4273-ab3b-8231d3bc1df1/public_url"
+               target="_blank" rel="noopener noreferrer" title="View CIS-Discovery badge on Credly">
+              <img src="img/cis-discovery-badge.png" alt="CIS Discovery Certified" width="72" height="72" loading="eager">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <a href="#stats" class="hero-scroll-hint" aria-label="Scroll down">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
 </section>
 
-<!------------User- Info Section---------------------->
-<section id="user-info">
-<div class="nav-bar">
-<nav class="navbar navbar-expand-lg">
- <a class="navbar-brand" href="#"><img src="img/logo6.png"</a> <!----Logo here --->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
+<!-- ===================== STATS BAR ===================== -->
+<section id="stats" class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal reveal-stagger">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-item reveal reveal-stagger">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-suffix"></span>
+        </div>
+        <span class="stat-label">Companies</span>
+      </div>
+      <div class="stat-item reveal reveal-stagger">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-item reveal reveal-stagger">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Technologies</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-        <a class="nav-link" href="#top">HOME</a>
-           <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT ME</a>
+<!-- ===================== ABOUT ===================== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <h2 class="section-heading reveal">About Me</h2>
+    <p class="section-sub reveal">Architect. Engineer. Problem-solver.</p>
+    <div class="row align-items-center gy-4 gx-0 gx-lg-5 mt-2">
+
+      <div class="col-md-5 text-center reveal">
+        <img src="img/3.png" class="profile-photo" alt="Raunak Kapoor"
+             loading="lazy" width="380" height="380">
+      </div>
+
+      <div class="col-md-7 about-text-col reveal">
+        <h3 class="about-heading">Who Am I?</h3>
+        <div class="whoami">
+          <p>
+            I am Raunak Kapoor, a highly experienced ServiceNow Architect with over 12 years in designing, implementing, and managing ServiceNow ITOM, ITSM, and CMDB solutions. I specialise in ServiceNow development, scripting, integrations, and automation, with a strong focus on optimising IT processes, enhancing platform performance, and driving digital transformation.
+          </p>
+          <p>
+            My expertise spans architecting Discovery, Event Management, and Service Mapping solutions; managing MID Servers and Agent Client Collector (ACC); integrating CyberArk for secure credential management; implementing SSH, SNMP, and WMI protocols for accurate asset discovery; and applying IRE rules to enforce CMDB data consistency. I have built REST API integrations, developed custom Service Portal solutions using JavaScript, HTML, CSS, and React, and led ServiceNow instance upgrades and performance optimisations.
+          </p>
+          <p>
+            Adept at architecting scalable solutions and leading development teams, I am passionate about delivering high-quality ServiceNow architectures that enhance service visibility, security, and business value.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div class="expertise-level">Expert</div>
+            <h5>ServiceNow Platform</h5>
+            <p>ITOM · ITSM · CMDB · Discovery · Service Mapping</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-level">Advanced</div>
+            <h5>Development &amp; APIs</h5>
+            <p>GlideScript · JavaScript · REST/SOAP · React</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-level">Proficient</div>
+            <h5>Cloud &amp; DevOps</h5>
+            <p>AWS · Azure · Git · Linux · DevOps</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS MATRIX ===================== -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2 class="section-heading reveal">Technical Skills</h2>
+    <p class="section-sub reveal">A broad stack built over 12+ years across enterprise IT environments</p>
+
+    <div class="skills-matrix">
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Platform</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">ServiceNow ITOM</span>
+          <span class="skill-tag">ServiceNow ITSM</span>
+          <span class="skill-tag">CMDB &amp; Discovery</span>
+          <span class="skill-tag">Service Mapping</span>
+          <span class="skill-tag">Service Portal</span>
+          <span class="skill-tag">Event Management</span>
+          <span class="skill-tag">MID Server / ACC</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Scripting &amp; Dev</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">GlideScript</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PowerShell</span>
+          <span class="skill-tag">Ruby Script</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Business Rules &amp; UI Actions</span>
+          <span class="skill-tag">Script Includes</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Integrations</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">REST / SOAP APIs</span>
+          <span class="skill-tag">LDAP / JDBC</span>
+          <span class="skill-tag">SCCM</span>
+          <span class="skill-tag">SolarWinds</span>
+          <span class="skill-tag">Azure AD</span>
+          <span class="skill-tag">CyberArk</span>
+          <span class="skill-tag">SNMP / SSH / WMI</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Cloud &amp; DevOps</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux Administration</span>
+          <span class="skill-tag">DevOps</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Database</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">SSRS</span>
+          <span class="skill-tag">RBAC &amp; Data Security</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-stagger">
+        <h4 class="skill-group-label">Frameworks</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">ITIL v4</span>
+          <span class="skill-tag">Agile / Scrum</span>
+          <span class="skill-tag">IRE Rules</span>
+          <span class="skill-tag">CMDB Health</span>
+          <span class="skill-tag">DEX</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="experience-section" id="experience">
+  <div class="container">
+    <h2 class="section-heading reveal">Work Experience</h2>
+    <p class="section-sub reveal">12+ years across enterprise IT operations and ServiceNow architecture</p>
+
+    <ul class="timeline mt-5">
+
+      <!-- Alcor Solutions -->
+      <li class="timeline-item reveal reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Lead ServiceNow Developer</h3>
+            <span class="timeline-date">Nov 2025 &ndash; Present</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-company">Alcor Solutions</span>
+            <span class="timeline-location">Bangalore, India</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Implemented ServiceNow integrations with PRTG, Azure Monitoring, and ThousandEyes; configured Alert Management and Event Management rules to streamline IT operations.</li>
+            <li>Installed, configured, and managed Agent Client Collector (ACC) with and without MID Server for ServiceNow ITOM; performed ongoing maintenance and troubleshooting to ensure optimal performance.</li>
+            <li>Led the implementation of DEX Service Operations Workspace, incorporating location-based GeoMaps to enhance visibility and reporting within the DEX Dashboard.</li>
+            <li>Developed Metric Rules to automate application closure on High CPU usage and Trigger Disk Cleanup on High Disk Utilisation, reducing manual intervention; validated rules end-to-end by simulating CPU spikes via PowerShell scripts on Hyper-V machines.</li>
+            <li>Authored multiple Check Definitions using Ruby and PowerShell scripts for remote remediation tasks, including application restarts on Mac and Windows, printer spooler resets, device restarts, and DNS cache clearing; validated and promoted scripts to production.</li>
+            <li>Installed, configured, and managed Desktop Assistant upgrades, ensuring seamless deployment across the environment.</li>
+          </ul>
+        </div>
       </li>
-      <li class="nav-item">
-       <a class="nav-link" href="https://www.cakeresume.com/raunakkapoor"/ target="_blank">RESUME</a>
+
+      <!-- Cognizant -->
+      <li class="timeline-item reveal reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">ServiceNow ITOM Developer</h3>
+            <span class="timeline-date">Jan 2023 &ndash; Oct 2025</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-company">Cognizant Technology Solutions</span>
+            <span class="timeline-location">Bangalore, India</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Architected, implemented, and maintained ServiceNow ITOM components, including Discovery, Event Management, and Service Mapping.</li>
+            <li>Installed, configured, and managed Agent Client Collector (ACC) for ServiceNow ITOM; performed ongoing maintenance and troubleshooting to ensure optimal performance.</li>
+            <li>Configured and managed MID Servers for Linux Discovery, ensuring compatibility with diverse IT environments.</li>
+            <li>Diagnosed and resolved Linux discovery issues, optimising asset tracking and data accuracy.</li>
+            <li>Integrated CyberArk for secure credential management in ServiceNow, enhancing authentication processes.</li>
+            <li>Implemented SSH authentication methods, including public and private key configurations, ensuring secure access control.</li>
+            <li>Configured ServiceNow credentials for Discovery, ensuring seamless connectivity with target devices.</li>
+            <li>Managed SNMP OID classification, enabling effective network monitoring and device identification.</li>
+            <li>Developed and optimised relationship mappings in CMDB, ensuring accurate service dependencies and impact analysis.</li>
+            <li>Applied ServiceNow's Identification and Reconciliation Engine (IRE) rules to enforce data consistency in CMDB.</li>
+            <li>Built REST API integrations to populate CMDB from external systems, improving asset discovery and management.</li>
+            <li>Developed and customised ServiceNow Service Portal using JavaScript, HTML, CSS, and React.</li>
+            <li>Led ServiceNow instance upgrades, patching, and performance optimisation initiatives.</li>
+            <li>Developed custom reports, dashboards, and data analytics for business insights and decision-making.</li>
+          </ul>
+        </div>
       </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#contact">CONTACT</a>
+
+      <!-- Eurofins -->
+      <li class="timeline-item reveal reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">ServiceNow Developer</h3>
+            <span class="timeline-date">Jul 2016 &ndash; Jan 2023</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-company">Eurofins IT Solutions</span>
+            <span class="timeline-location">Bangalore, India &middot; 6 yrs 6 mos</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed and maintained ServiceNow CMDB and Discovery, improving infrastructure visibility and data accuracy.</li>
+            <li>Configured and supported MID Servers for Windows and Linux environments, ensuring smooth discovery operations.</li>
+            <li>Worked on Discovery patterns, probes, and classifications to enhance CI identification and CMDB integrity.</li>
+            <li>Assisted in configuring SNMP, SSH, and WMI protocols for accurate asset discovery.</li>
+            <li>Configured IRE rules to eliminate duplicate CIs and ensure proper reconciliation.</li>
+            <li>Automated relationship mapping in CMDB, enabling better service impact analysis.</li>
+            <li>Designed custom dashboards and reports to track Discovery performance and CMDB health.</li>
+            <li>Provided technical support for ServiceNow integrations, ensuring seamless data exchange between external systems.</li>
+          </ul>
+        </div>
       </li>
+
+      <!-- HCL -->
+      <li class="timeline-item reveal reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Senior Analyst</h3>
+            <span class="timeline-date">Nov 2013 &ndash; May 2015</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-company">HCL Technologies</span>
+            <span class="timeline-location">Noida, India</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Provided remote IT support, ServiceNow administration, and incident management for global clients.</li>
+            <li>Configured and optimised Lotus Notes, Microsoft Exchange, and cloud-based IT systems.</li>
+            <li>Implemented security policies, data protection measures, and access management controls.</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Wipro -->
+      <li class="timeline-item reveal reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Associate Tech Support Engineer</h3>
+            <span class="timeline-date">Feb 2010 &ndash; Dec 2010</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-company">Wipro Ltd.</span>
+            <span class="timeline-location">New Delhi, India &middot; 10 mos</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Worked as a Technical Support Engineer for Verizon US Internet Service Provider and Blackberry.</li>
+            <li>Implemented and configured email solutions on Microsoft Outlook to enhance productivity for clients.</li>
+            <li>Configured and maintained email solutions through Blackberry Enterprise Services and Blackberry Internet Service.</li>
+          </ul>
+        </div>
+      </li>
+
     </ul>
   </div>
-</div>
-</nav>
-                      <!-----------------About----------->
-
-<div class="about container" id="about">
-<div class="row">
-<div class="col-md-6 text-center">
-<div><br><br><br><br>
-<img src="img/3.png" class="user-box">  <!-------center picture square------------></div><br>
-</div>
-<div class="col-md-6">
-<h3><br><br><br><br>WHO AM I ?</h3>
-<div class="whoami">
-  <p>
-    I am Raunak Kapoor, a seasoned ServiceNow ITOM Architect with over a decade of experience architecting, implementing, and optimizing enterprise IT Operations Management solutions. I have deep expertise in Discovery, Event Management, CMDB, and platform integrations, ensuring accurate infrastructure visibility and operational efficiency.
-  </p>
-  
-  <p>
-    My work includes architecting end-to-end ServiceNow ITOM solutions, configuring and maintaining MID Servers (Windows/Linux), deploying and managing Agent Client Collector (ACC), integrating CyberArk for secure credential management, and implementing SSH, SNMP, and WMI protocols for secure and accurate asset discovery. I have designed and optimized CMDB data models, applied Identification and Reconciliation Engine (IRE) rules, automated relationship mapping, and developed custom dashboards, reports, and REST API integrations to enhance data accuracy and service impact analysis.
-  </p>
-  
-  <p>
-    Recognized for delivering high-quality solutions, I have led platform upgrades and performance optimizations. I am passionate about building robust ITOM architectures that enhance service visibility, security, and business value.
-  </p>
-</div>
-
-<div class="skills-bar"><!-------Skills bar---->
-<p>ServiceNow ITOM Development</p>
-<div class="progress">
-<div class="progress-bar" style="width: 80%;">80%</div>
-</div>
-<p>Visual regression Testing(BacktopJS)</p>
-<div class="progress">
-<div class="progress-bar" style="width: 70%;">70%</div>
-</div>
-<p>SSRS Reporting, MySQL</p>
-<div class="progress">
-<div class="progress-bar" style="width: 60%;">60%</div>
-</div>
-<p>Powershell</p>
-<div class="progress">
-<div class="progress-bar" style="width: 70%;">70%</div>
-</div>
-<p>VBscript, Javascript, Java, Python, HTML, Linux, Git </p>
-<div class="progress">
-<div class="progress-bar" style="width: 60%;">60%</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!------Social Icons------->
-<div class="social-icons">
-<a href="https://www.linkedin.com/in/raunakkapoor"/ target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-<a href="https://www.facebook.com/raunakkapoor"/ target="_blank"><li><i class="fa fa-Facebook"></i></li></a>
-<a href="https://www.instagram.com/raunakkapoor_"/ target="_blank"><li><i class="fa fa-Instagram"></i></li></a>
-<a href="https://github.com/raunak1264"/ target="_blank"><li><i class="fa fa-github"></i></li></a>
-<a href="https://www.freecodecamp.org/raunak1264"/ target="_blank"><li><i class="fa fa-free-code-camp"></i></li></a>
-<a href="https://www.hackerrank.com/rawnakkapoor"/ target="_blank"><li><i class="fa fa-user-secret"></i></li></a>
-</div>
-<!--------------Resume--------------------->
-<div class="resume" id="resume">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<h3 class="text-center">My Experiences</h3>
-<ul class="timeline"><br>
-  <h4> <span>2023 - </span>ServiceNow ITOM Architect -Currently Working</h4>
-  <b>Company</b> - Cognizant Technology Solutions <br>
-<b>Duration</b> - January 2023 to Present<br>
-<b>Location</b> - Bangalore India<br>
-
-<p>
-  <li><h6> Implementing and maintaining the ServiceNow ITOM platform, including its various components such as Event Management, Performance Analytics, and Discovery.</h6>
-  <li><h6> Installed, configured, and managed Agent Client Collector (ACC) for ServiceNow ITOM; performed ongoing maintenance and troubleshooting to ensure optimal performance.</h6>
-  <li><h6> Configuring and customizing the platform to meet specific business needs and requirements.</h6>
-  <li><h6> Managing users, security, and access controls within the ServiceNow ITOM platform.</h6>
-  <li><h6> Ensuring the platform is highly available, secure, and scalable to meet growing business demands.</h6>
-  <li><h6> Monitoring and troubleshooting platform performance and issues.</h6>
-  <li><h6> Managing and maintaining the platform's data and integration with other IT systems and tools.</h6>
-  <li><h6> Requests, Incidents, and Changes related to the ServiceNow platform.</h6>
-  <li><h6> Developing and implementing policies and procedures for the effective use of the ServiceNow ITOM platform.</h6>
-  <li><h6> Keeping up to date with new releases and upgrades to the platform and implementing them as necessary.</h6>
-  <li><h6> Collaborating with cross-functional teams, including IT, security, and business stakeholders, to ensure the platform meets business objectives and goals.</h6>
-
-<br>
-<h4> <span>2016 - </span>ServiceNow Developer</h4>
-<b>Company</b> - Eurofins IT Solutions India<br>
-<b>Duration</b> - 6 years & 7 Months [July 2016-Jan 2023]<br>
-<b>Location</b> - Bangalore India<br>
-
-<p>
-  <li><h6> Manage MID Servers on both Linux and Windows operating systems</h6>
-    <li><h6> Conduct device discovery via Discovery, SCCM, and Intune</h6>
-    <li><h6> Perform AWS Cloud Discovery via a Linux MID server</h6>
-    <li><h6> Monitor and analyze Discovery Behaviors, Patterns, Probes, and the ECC queue</h6>
-    <li><h6> Create dashboards, homepages, and reports</h6>
-    <li><h6> Integrate SCCM, SolarWinds, Discovery, LDAP, Intune, Azure AD, and manage domain structures</h6>
-    <li><h6> Develop UI Actions, Transform Maps, Knowledge Management, Service Catalogs, Flow Designers, and Notifications; manage branding and access provisioning for users</h6>
-    <li><h6> Address requests, incidents, and changes related to the ServiceNow platform</h6>
-    <li><h6> Administer ServiceNow, including UI Policies, Form Designs, and Form Layout changes</h6>
-    <li><h6> Apply update sets, UI scripts, and Notifications to the ServiceNow platform</h6>
-    <li><h6> Load data into ServiceNow using import sets, and develop business rules, client scripts, UI actions, UI pages, ACLs, workflows, reports, and Service Catalogs</h6>
-    <li><h6> Support both custom and standard reports within ServiceNow</h6>
-    <li><h6> Load, manipulate, and maintain data between ServiceNow and other systems</h6>
-    <li><h6> Manage low and high-severity incidents throughout the incident life-cycle, ensuring compliance with availability, resolution, and restoration SLA's</h6>
-    <li><h6> Develop test cases based on use cases and requirements</h6>
-    <li><h6> Work in a Scrum environment and have experience with ITIL Processes and Tools, ITIL v4 certification</h6>
-    <li><h6> Possess scripting expertise in MySQL, PowerShell, VBScript, JavaScript, Java, Python, HTML</h6>
-    <li><h6> Have experience with Linux installation and administration, including Red Hat, CentOS, Ubuntu, and Raspbian OS</h6>
-    <li><h6> Develop SSRS reports using MySQL queries</h6>
-    <li><h6> Conduct visual regression testing through BackstopJS</h6>
-    <li><h6> Train users on the application of standard functionalities in ServiceNow & OTRS</h6>
-    <li><h6> Administer OTRS Frontend, including Notification Management and Template Management</h6>
-    <li><h6> Address ServiceNow & OTRS issues from users globally</h6>
-    <li><h6> Manage Microsoft Exchange, including cleanup and access delegation</h6>
-    <li><h6> Monitor servers on OpsView and SolarWinds</h6>
-    <li><h6> Recognized as a Star Performer of the year on three occasions</h6>
-
-<!-- 
-<h4><span>2015 - </span>Desktop Support Engineer</h4>
-<b>Company</b> - Europia Biotech Pvt Ltd<br>
-<b>Duration</b> - 11 Months [May 2015-March 2016]<br>
-<b>Location</b> - Bangalore India<br>
-<p>
-  <li><h6>Installing, configuring, and maintaining desktop computers, laptops, and related hardware and software.</h6>
-    <li><h6>Providing technical support to end-users for hardware, software, and network-related issues.</h6>
-    <li><h6>Troubleshooting and resolving desktop computer and software problems.</h6>
-    <li><h6>Configuring and maintaining printers, scanners, and other peripheral devices.</h6>
-    <li><h6>Ensuring the security and protection of desktop computers, data, and other assets.</h6>
-    <li><h6>Assisting with the deployment of new hardware and software to end-users.</h6>
--->
-<br>
-<h4><span>2013 - </span>IT Support Engineer/Senior Analyst</h4>
-<b>Company</b> - HCL Technologies<br>
-<b>Duration</b> - 18 Months [Nov 2013-May 2015]<br>
-<b>Location</b> - Noida India<br>
-<p>
-  <li><h6>Worked as a Desktop Support Engineer at Electrolux APAC and EMEA</h6>
-    <li><h6>Documenting and maintaining technical information regarding desktop computer configurations, hardware and software inventory, and other related information to ensure an organized and efficient technical knowledge base.</h6>
-    <li><h6>Delivering end-user training and support on the use of desktop computer hardware and software to enhance user productivity and proficiency.</h6>
-    <li><h6>Collaborating with other IT teams to resolve technical issues and support internal users effectively.</h6>
-    <li><h6>Keeping abreast of the latest technologies, hardware, and software, and providing recommendations for upgrades as needed.</h6>
-    <li><h6>Managing and maintaining a comprehensive inventory of desktop computer hardware and software.</h6>
-    <li><h6>Interacting with Electrolux internal users, troubleshooting, and resolving application errors primarily on Lotus Notes.</h6>
-    <li><h6>Implementing and configuring Lotus Notes to enhance communication and productivity for internal users.</h6>
-    <li><h6>Participating in the installation/migration of systems from Windows XP to Windows 7.</h6>
-    <li><h6>Configuring emails on iPhones and Blackberry to facilitate secure and efficient communication for internal users.</h6>
-    <li><h6>Providing remote desktop support, access management, shift management, client coordination, and escalation management to ensure timely and effective technical support.</h6>
-    <li><h6>Managing user and data management, mapping network drives, ActiveSync management, GoToMeeting configuration, and troubleshooting hardware and software-related issues on laptops and desktops.</h6>
-    <li><h6>Configuring and issuing new laptops, desktops, and iPhones to internal employees of Electrolux.</h6>
-    <li><h6>Deploying software through Res and SCCM, and delegating access through Active Directory.</h6>
-    <li><h6>Handling regions such as Australia, New Zealand, and Japan as the Regional Expert for Remote IT Support.</h6>
-    <li><h6>Archiving on Outlook and performing Active Directory management, cleanup, access delegation, and power-shell scripting.</h6>
-    <li><h6>Installing Windows Server 2012 R2 and Active Directory to maintain and improve the organizational infrastructure.</h6>
-
-</p>
-<br>
-<h4><span>2010 - </span>Associate/IT Support</h4>
-<b>Company</b> - Wipro Technologies<br>
-<b>Duration</b> - 10 Months [Feb 2010-Dec 2010]<br>
-<b>Location</b> - New Delhi India<br>
-<p>
-  <li><h6>Worked as a Technical Support Engineer for Verizon US Internet Service Provider and Blackberry</h6>
-    <li><h6>Implementing and configuring email solutions on Microsoft Outlook to enhance productivity and communication for clients.</h6>
-    <li><h6>Troubleshooting technical issues related to Blackberry devices and delivering effective resolutions to clients.</h6>
-    <li><h6>Configuring and maintaining email solutions through Blackberry Enterprise Services and Blackberry Internet Service, ensuring secure and reliable communication for clients.</h6>
-
-</p>
-<br>
-<!-------------------Education---->
-</div>
-<div class="col-md-6">
-<h3 class="text-center">My Education</h3>
-<ul class="timeline"><br>
-<h4> <span>2011-2013 - </span>Masters in Business Administration</h4>
-<b>Subjects </b> - Major: Marketing, Minor: IT<br>
-<b>Institute</b> - CET-IILM Academy of Higher Learning<br>
-<b>Location</b> - Greater Noida India<br>
-<br>
-<h4> <span>2006-2009 - </span>Bachelors in Computer Application</h4>
-<b>Subjects </b> - Computer Applications<br>
-<b>Institute</b> - International Institute for Special Education<br>
-<b>Location</b> - Lucknow India<br>
-
-<br>
-<h4> <span>2006 - </span>Intermediate </h4>
-<b>Subjects </b> - (Physics, Chemistry, Maths) <br>
-<b>Institute</b> - A  KKIC College<br>
-<b>Location</b> - Lucknow India<br>
-<br>
-<h4> <span>2004 - </span>High School </h4>
-<b>Subjects </b> - (Physics, Chemistry, Maths) <br>
-<b>Institute</b> - Central Academy<br>
-<b>Location</b> - Lucknow India<br>
-<br>
-<h3 class="text-center">Summer Internships</h3>
-<h4> <span>2012 - </span>Wildnet Technologies Pvt Ltd</h4>
-<b>Project</b> - Search Engine Optimization,Social Media Optimization<br>
-<b>Duration</b> - 3 Months <br>
-<b>Location</b> - Noida India<br>
-<br>
-
-<h4> <span>2009 - </span>Marg Infozen</h4>
-<b>Project</b> - Web development project on 'Online Business Management'<br>
-<b>Duration</b> - 3 Months<br>
-<b>Location</b> - Lucknow India<br>
-<br>
-
-<h3 class="text-center">My Certifications & Online Badges</h3>
-
-
-<h4> <span>2020 - </span>ServiceNow Learning Badges</h4>
-<h6>
-  Platform - ServiceNow Learning Portal - 
-  <a href="https://account.servicenow.com/personal-data/11ea57e13/ad56fbe80/a806e4a75/ae71eHNYJ/resume.html" target="_blank">ServiceNow Profile</a>, 
-  <a href="https://learning.servicenow.com/lxp?id=nl_public&user=raunakkapo030970" target="_blank">ServiceNow Profile</a>
-</h6>
- <h6>Platform - Udemy -
- <a href="https://www.udemy.com/certificate/UC-eb0f6c84-d785-424e-816b-532f4e5db11b/"/ target="_blank">The Complete ServiceNow System Administrator<a/>
- 	 <br></h6>
-<h4> <span>2020 - </span>ITIL v4 foundation</h4>
-<h6>Institute - PeopleCert -
-<a href="https://drive.google.com/file/d/10BRXai2CSKR9M5LCy9t6lQf-ArkS1kfX/view?usp=sharing"/ target="_blank">Certificate<a/></h6>
-<h4> <span>2017 - </span>ITIL v3 foundation</h4>
-<h6>Institute - PeopleCert -
-<a href="https://drive.google.com/file/d/1gPjCVyJ7HXfzmXkSQIY6RKT6NN_6yULw/view?usp=sharing"/ target="_blank">Certificate<a/>
-<br></h6>
-<h4> <span>2021 - </span>Linkedin Learning Courses</h4>
-<h6>Platform - Linkedin -
-<a href="https://drive.google.com/file/d/1U-ZrnI9xldRbW1-IeYf8RxPcCXmo52Iq/view?usp=sharing"/ target="_blank">MySQL Essential<a/>
-<br></h6>
-<h6>Platform - Linkedin -
-<a href="https://drive.google.com/file/d/1ta_wukrH9-X-_GkQbKBiQUqnDMrF-aEs/view?usp=sharing"/ target="_blank">Web Devlopment<a/>
-<br></h6>
-<h6>Platform - Linkedin -
-<a href="https://drive.google.com/file/d/13t7cKFpENjqHc0QLHbWr_cncMnJw2ZGs/view?usp=sharing"/ target="_blank">Linux Essential<a/>
-<br></h6>
-<h6>Platform - Linkedin -
-<a href="https://drive.google.com/file/d/1otK6zc-mQtqoifYrBfSP9sHhafI6jOux/view?usp=sharing"/ target="_blank">JavaScript Essential<a/>
-<br></h6>
-<h4> <span>2025 - </span>CIS - Discovery</h4>
-<h6>Platform - ServiceNow -
-<a href="https://drive.google.com/file/d/1p0f4FpdmNYzn8zhm39UK_V2gg-uGvQGX/view?usp=sharing"/ target="_blank">Certified Implementation Specialist - Discovery<a/>
-<br></h6>
-	<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e5245bd7-6861-4273-ab3b-8231d3bc1df1" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-</p>
-
-<div class="text-center">
-  <h3>My Skills</h3>
-</div>
-<p>
-  <li><h6>ServiceNow Development</h6>
-    <li><h6>IT Operations Management (ITOM)</h6>
-    <li><h6>IT Service Management(ITSM)</h6>
-    <li><h6>MySQL</h6>
-    <li><h6>ITIL v4 Certified</h6>
-    <li><h6>BackstopJS</h6>
-    <li><h6>Web Development</h6>
-    <li><h6>Cloud Computing</h6>
-    <li><h6>Front-end Development</h6>
-    <li><h6>JavaScript, HTML, CSS, WordPress</h6>
-    <li><h6>Linux System Administration</h6>
-    <li><h6>Cloud Computing</h6>
-    <li><h6>Amazon Web Services (AWS)</h6>
-    <li><h6>SQL Server Reporting Services (SSRS)</h6>
-    <li><h6>Git</h6>
-    <li><h6>Active Directory</h6>
-    <li><h6>Microsoft Excel</h6>
-    <li><h6>Core Java</h6>
-    <li><h6>Windows Server</h6>
-    </p>
-</div>
-</div>
-</div>
-</div>
-
-<!------------Contact---->
-<div class="contact" id="contact">
-<div class="container text-left">
-<h1> Contact Me</h1>
-
-<div class="row">
-<div class="col-md-4">
-<i class="fa fa-phone"></i>
-<i class="fa fa-whatsapp"></i>
-<i class="fa fa-telegram"></i>
-<a href="tel:+919555940777">+91-9555940777</a>
-</div></div>
-<div class="row">
-<div class="col-md-4">
-<i class="fa fa-envelope"></i>
-<a href="mailto:rawnakkapoor@gmail.com">Rawnakkapoor@gmail.com</a>
-
-</div>
-</div>
-<div class="row">
-<div class="col-md-4">
-<i class="fa fa-skype"></i>
-<a href="skype:rawnakkapoor">rawnakkapoor</a>
-<br>
-<!---<p>rawnakkapoor</p>--->
-<!--<button type="button" class="btn btn-primary><i class"fa fa-download"></i>Resume</button>-->
-<!--<button type="button" href="https://www.linkedin.com/in/raunakkapoor1/" class="btn btn-primary><i class"fa fa-rocket"></i>Hire Me</button>-->
-<a href="https://www.linkedin.com/in/raunakkapoor/"/ target="_blank" class="btn btn-primary" role="button" aria-disabled="true"> Hire Me</a>
-<a href="https://drive.google.com/drive/folders/101HxyZVD9Mq6vqf6lcx9rrAVeZbwlXb_?usp=sharing"/ target="_blank" class="btn btn-primary" role="button" aria-disabled="true">Resume</a>
-<div class="footer text-center">
-</div>
-</div>
-</div>
-</div>
-<p>Made with <i class="fa fa-Heart-O"></i> by Raunak kapoor</p>
-
-</div>
-</div>
 </section>
-<!-----------Smooth Scroll--->
-<script scr="smooth-scroll.js"></script>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section class="certifications-section" id="certifications">
+  <div class="container">
+    <h2 class="section-heading reveal">Certifications &amp; Badges</h2>
+    <p class="section-sub reveal">Verified credentials from ServiceNow, PeopleCert, and LinkedIn Learning</p>
+
+    <!-- Featured: CIS Discovery -->
+    <div class="cert-featured reveal">
+      <div class="cert-featured-badge">
+        <a href="https://www.credly.com/badges/e5245bd7-6861-4273-ab3b-8231d3bc1df1/public_url"
+           target="_blank" rel="noopener noreferrer" title="Verify on Credly">
+          <img src="img/cis-discovery-badge.png"
+               alt="ServiceNow CIS Discovery Badge" width="120" height="120" loading="lazy">
+        </a>
+      </div>
+      <div class="cert-featured-content">
+        <p class="cert-featured-issuer">ServiceNow &bull; 2025</p>
+        <h3 class="cert-featured-title">Certified Implementation Specialist &mdash; Discovery</h3>
+        <p style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-bottom: 1.5rem;">
+          Industry-recognised certification validating expertise in ServiceNow Discovery architecture, MID Server management, CMDB population, and credential configuration.
+        </p>
+        <div style="display:flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://drive.google.com/file/d/1p0f4FpdmNYzn8zhm39UK_V2gg-uGvQGX/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-featured-link">
+            <i class="fa-solid fa-certificate"></i> View Certificate
+          </a>
+          <a href="https://www.credly.com/badges/e5245bd7-6861-4273-ab3b-8231d3bc1df1/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-featured-link">
+            <i class="fa-solid fa-circle-check"></i> Verify on Credly
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cert grid -->
+    <div class="cert-grid">
+
+      <div class="cert-card reveal reveal-stagger">
+        <div class="cert-year">2020</div>
+        <h4>ITIL v4 Foundation</h4>
+        <p class="cert-issuer">PeopleCert</p>
+        <div class="cert-links">
+          <a href="https://drive.google.com/file/d/10BRXai2CSKR9M5LCy9t6lQf-ArkS1kfX/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal reveal-stagger">
+        <div class="cert-year">2017</div>
+        <h4>ITIL v3 Foundation</h4>
+        <p class="cert-issuer">PeopleCert</p>
+        <div class="cert-links">
+          <a href="https://drive.google.com/file/d/1gPjCVyJ7HXfzmXkSQIY6RKT6NN_6yULw/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal reveal-stagger">
+        <div class="cert-year">2020</div>
+        <h4>ServiceNow Learning Badges</h4>
+        <p class="cert-issuer">ServiceNow Learning Portal</p>
+        <div class="cert-links">
+          <a href="https://account.servicenow.com/personal-data/11ea57e13/ad56fbe80/a806e4a75/ae71eHNYJ/resume.html"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> ServiceNow Profile
+          </a>
+          <a href="https://learning.servicenow.com/lxp?id=nl_public&user=raunakkapo030970"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Learning Profile
+          </a>
+          <a href="https://www.udemy.com/certificate/UC-eb0f6c84-d785-424e-816b-532f4e5db11b/"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Udemy: ServiceNow Admin
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal reveal-stagger">
+        <div class="cert-year">2021</div>
+        <h4>LinkedIn Learning Courses</h4>
+        <p class="cert-issuer">LinkedIn</p>
+        <div class="cert-links">
+          <a href="https://drive.google.com/file/d/1U-ZrnI9xldRbW1-IeYf8RxPcCXmo52Iq/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> MySQL Essential
+          </a>
+          <a href="https://drive.google.com/file/d/1ta_wukrH9-X-_GkQbKBiQUqnDMrF-aEs/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Web Development
+          </a>
+          <a href="https://drive.google.com/file/d/13t7cKFpENjqHc0QLHbWr_cncMnJw2ZGs/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Linux Essential
+          </a>
+          <a href="https://drive.google.com/file/d/1otK6zc-mQtqoifYrBfSP9sHhafI6jOux/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer" class="cert-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> JavaScript Essential
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="projects-section" id="projects">
+  <div class="container">
+    <h2 class="section-heading reveal">Tools &amp; Projects</h2>
+    <p class="section-sub reveal">Open-source utilities built for ServiceNow and the web</p>
+
+    <div class="row g-4 mt-2">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card reveal reveal-stagger">
+          <div class="project-icon"><i class="fa-brands fa-chrome"></i></div>
+          <h5 class="project-title">Remove Duplicates &amp; Trailing Spaces</h5>
+          <p class="project-desc">Chrome extension that removes duplicates and trailing spaces from lists of words or IP addresses &mdash; handy for cleaning up ServiceNow inputs.</p>
+          <div class="project-tags">
+            <span class="project-tag">Chrome Extension</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/raunak1264/Remove_duplicates_and_trailing_spaces" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card reveal reveal-stagger">
+          <div class="project-icon"><i class="fa-solid fa-code"></i></div>
+          <h5 class="project-title">JSON Formatter</h5>
+          <p class="project-desc">Lightweight web tool to format and minify JSON data for better readability and storage. Fast, simple, and works in the browser.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Web Tool</span>
+          </div>
+          <div class="project-links">
+            <a href="https://raunak1264.github.io/Raunak_JSON_Formatter/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card reveal reveal-stagger">
+          <div class="project-icon"><i class="fa-solid fa-sitemap"></i></div>
+          <h5 class="project-title">Subnet Calculator</h5>
+          <p class="project-desc">Web-based subnet calculator that lists all IP addresses within a given subnet. Accepts input in x.x.x.x/y format for quick network planning.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Networking</span>
+          </div>
+          <div class="project-links">
+            <a href="https://raunak1264.github.io/Subnet-Calculator/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card reveal reveal-stagger">
+          <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+          <h5 class="project-title">IPv4 Address Formatter</h5>
+          <p class="project-desc">Converts newline-separated IPv4 addresses into a comma-separated list &mdash; purpose-built for adding IP ranges into ServiceNow Discovery Schedules.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">ServiceNow</span>
+          </div>
+          <div class="project-links">
+            <a href="https://raunak1264.github.io/ip_address_formatter_SN_QR/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card reveal reveal-stagger">
+          <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h5 class="project-title">Portfolio Website</h5>
+          <p class="project-desc">This site &mdash; a personal portfolio built from scratch showcasing professional experience, skills, and projects as a ServiceNow Architect.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML &amp; CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/raunak1264/raunakweb" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://raunak1264.github.io/raunakweb/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section class="education-section" id="education">
+  <div class="container">
+    <h2 class="section-heading reveal">Education</h2>
+    <p class="section-sub reveal">Academic background in Business and Computer Science</p>
+
+    <div class="edu-grid mt-5">
+
+      <div class="edu-card reveal reveal-stagger">
+        <div class="edu-year">2011 &ndash; 2013</div>
+        <h4>Masters in Business Administration</h4>
+        <p class="edu-institution">CET-IILM Academy of Higher Learning</p>
+        <p class="edu-location">Greater Noida, India</p>
+        <p class="edu-detail">Major: Marketing &middot; Minor: IT</p>
+      </div>
+
+      <div class="edu-card reveal reveal-stagger">
+        <div class="edu-year">2006 &ndash; 2009</div>
+        <h4>Bachelor of Computer Application</h4>
+        <p class="edu-institution">International Institute for Special Education</p>
+        <p class="edu-location">Lucknow, India</p>
+        <p class="edu-detail">Computer Applications</p>
+      </div>
+
+    </div>
+
+    <div class="edu-secondary">
+      <h5 class="edu-secondary-heading">Earlier Education &amp; Internships</h5>
+      <div class="edu-secondary-grid">
+
+        <div class="edu-secondary-card reveal reveal-stagger">
+          <div class="edu-year">2006</div>
+          <h5>Intermediate</h5>
+          <p>A KKIC College, Lucknow &mdash; Physics, Chemistry, Maths</p>
+        </div>
+
+        <div class="edu-secondary-card reveal reveal-stagger">
+          <div class="edu-year">2004</div>
+          <h5>High School</h5>
+          <p>Central Academy, Lucknow &mdash; Physics, Chemistry, Maths</p>
+        </div>
+
+        <div class="edu-secondary-card reveal reveal-stagger">
+          <div class="edu-year">2012</div>
+          <h5>Internship &mdash; Wildnet Technologies</h5>
+          <p>Noida, India &middot; SEO &amp; SMO &middot; 3 Months</p>
+        </div>
+
+        <div class="edu-secondary-card reveal reveal-stagger">
+          <div class="edu-year">2009</div>
+          <h5>Internship &mdash; Marg Infozen</h5>
+          <p>Lucknow, India &middot; Web Development &middot; 3 Months</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact-section" id="contact">
+  <div class="container" style="position:relative; z-index:1;">
+    <h2 class="section-heading reveal">Get In Touch</h2>
+    <p class="section-sub reveal">Open to new opportunities and collaborations</p>
+
+    <div class="row justify-content-center g-4 mt-2">
+
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-card reveal reveal-stagger">
+          <i class="fa-solid fa-phone contact-card-icon"></i>
+          <h5>Phone / WhatsApp</h5>
+          <a href="tel:+919555940777">+91-9555940777</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-card reveal reveal-stagger">
+          <i class="fa-solid fa-envelope contact-card-icon"></i>
+          <h5>Email</h5>
+          <a href="mailto:rawnakkapoor@gmail.com">rawnakkapoor@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-card reveal reveal-stagger">
+          <i class="fa-brands fa-linkedin contact-card-icon"></i>
+          <h5>LinkedIn</h5>
+          <a href="https://www.linkedin.com/in/raunakkapoor/" target="_blank" rel="noopener noreferrer">linkedin.com/in/raunakkapoor</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-cta">
+      <a href="https://www.linkedin.com/in/raunakkapoor/" target="_blank" rel="noopener noreferrer" class="btn-hire">
+        <i class="fa-solid fa-rocket"></i> Hire Me
+      </a>
+      <a href="https://drive.google.com/drive/folders/101HxyZVD9Mq6vqf6lcx9rrAVeZbwlXb_?usp=sharing"
+         target="_blank" rel="noopener noreferrer" class="btn-resume">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo6.png" alt="Raunak Kapoor" height="40" loading="lazy">
+        <p>ServiceNow ITOM Architect &bull; Bangalore, India</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#header">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/raunakkapoor" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/raunak1264" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.freecodecamp.org/raunak1264" target="_blank" rel="noopener noreferrer" aria-label="freeCodeCamp">
+          <i class="fa-brands fa-free-code-camp"></i>
+        </a>
+        <a href="https://www.hackerrank.com/rawnakkapoor" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+    </div>
+    <p class="footer-bottom">Made with <i class="fa-solid fa-heart"></i> by Raunak Kapoor</p>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ===================== SCRIPTS ===================== -->
+<!-- Bootstrap 5.3.3 bundle (includes Popper — no jQuery needed) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmisapTbsKTK11uZ0gI1gFt47OcX" crossorigin="anonymous"></script>
+
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+(function () {
+  'use strict';
+
+  /* ---- Dark / Light Theme ---- */
+  var DARK = 'dark', LIGHT = 'light';
+
+  function setTheme(isDark) {
+    document.documentElement.setAttribute('data-theme', isDark ? DARK : LIGHT);
+    var icon = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    var mobileIcon = document.getElementById('themeIcon');
+    var desktopIcon = document.getElementById('themeIconDesktop');
+    if (mobileIcon)  mobileIcon.className  = icon;
+    if (desktopIcon) desktopIcon.className = icon;
+    try { localStorage.setItem('theme', isDark ? DARK : LIGHT); } catch(e) {}
+  }
+
+  function isDarkActive() {
+    return document.documentElement.getAttribute('data-theme') === DARK;
+  }
+
+  var stored;
+  try { stored = localStorage.getItem('theme'); } catch(e) {}
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  setTheme(stored ? stored === DARK : prefersDark);
+
+  function toggleTheme() { setTheme(!isDarkActive()); }
+
+  var toggleMobile  = document.getElementById('themeToggle');
+  var toggleDesktop = document.getElementById('themeToggleDesktop');
+  if (toggleMobile)  toggleMobile.addEventListener('click',  toggleTheme);
+  if (toggleDesktop) toggleDesktop.addEventListener('click', toggleTheme);
+
+  /* ---- Frosted Nav on Scroll ---- */
+  var nav = document.getElementById('mainNav');
+  function updateNav() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 80);
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  /* ---- Back to Top ---- */
+  var btt = document.getElementById('backToTop');
+  function updateBtt() {
+    if (btt) btt.classList.toggle('visible', window.scrollY > 400);
+  }
+  window.addEventListener('scroll', updateBtt, { passive: true });
+  if (btt) {
+    btt.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---- Scroll Reveal (Intersection Observer) ---- */
+  var revealEls = document.querySelectorAll('.reveal, .reveal-left');
+
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+
+    /* Immediately reveal elements already in viewport at page load */
+    requestAnimationFrame(function () {
+      revealEls.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) {
+          el.classList.add('revealed');
+          revealObserver.unobserve(el);
+        }
+      });
+    });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('revealed'); });
+  }
+
+  /* ---- Stats Counter Animation ---- */
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var duration = 1400;
+    var steps = 60;
+    var stepTime = duration / steps;
+    var current = 0;
+    var increment = target / steps;
+    var timer = setInterval(function () {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(current);
+    }, stepTime);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var statsObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    var statsBar = document.getElementById('stats');
+    if (statsBar) statsObserver.observe(statsBar);
+  }
+
+  /* ---- Active Nav Link on Scroll ---- */
+  var sectionIds = ['header', 'stats', 'about', 'skills', 'experience', 'certifications', 'projects', 'education', 'contact'];
+  var navLinks = document.querySelectorAll('.nav-link');
+
+  function updateActiveNav() {
+    var scrollPos = window.scrollY + 120;
+    sectionIds.forEach(function (id) {
+      var section = document.getElementById(id);
+      if (!section) return;
+      var top    = section.offsetTop;
+      var bottom = top + section.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+          var href = link.getAttribute('href');
+          if (href === '#' + id) link.classList.add('active');
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
+
+})();
 </script>
+
 </body>
 </html>
