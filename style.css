@@ -531,6 +531,7 @@ ul { margin: 0; padding: 0; }
   height: 340px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 15%;
   border: 3px solid var(--color-accent-border);
   box-shadow: var(--shadow-glow), var(--shadow-xl);
   display: block;
@@ -1533,18 +1534,18 @@ body:not([data-theme]) .education-section {
   margin-bottom: var(--space-6);
 }
 
-.footer-logo-text {
+.footer-sig {
   display: block;
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  height: 100px;
+  width: auto;
   margin-bottom: var(--space-3);
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
+[data-theme="light"] .footer-sig {
+  filter: none;
+  mix-blend-mode: multiply;
 }
 
 .footer-brand p {
@@ -1599,8 +1600,12 @@ body:not([data-theme]) .education-section {
 
 .footer-bottom {
   text-align: center;
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
   margin: 0;
 }
 
@@ -1721,7 +1726,7 @@ body:not([data-theme]) .education-section {
   }
 
   .footer-brand { grid-column: 1 / -1; text-align: center; }
-  .footer-logo-text { text-align: center; }
+  .footer-sig { margin: 0 auto; }
   .footer-social { justify-content: flex-end; }
 
   .cert-featured {
