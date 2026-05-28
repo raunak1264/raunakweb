@@ -239,6 +239,63 @@ ul { margin: 0; padding: 0; }
   height: 44px;
 }
 
+.brand-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  letter-spacing: 0.13em;
+  text-decoration: none !important;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  transition: filter var(--transition-base);
+}
+
+.brand-text:hover {
+  filter: drop-shadow(0 0 10px rgba(61, 142, 245, 0.45));
+}
+
+.brand-first {
+  font-weight: 800;
+  background: linear-gradient(90deg, #3d8ef5 0%, #6aaeff 40%, #a8d4ff 60%, #3d8ef5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% auto;
+  animation: brand-shimmer 4s linear infinite;
+}
+
+.brand-sep {
+  display: inline-block;
+  width: 0.38em;
+}
+
+.brand-last {
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.16em;
+}
+
+[data-theme="light"] .brand-last {
+  color: var(--color-text-muted);
+}
+
+@keyframes brand-shimmer {
+  0%   { background-position: 0% center; }
+  50%  { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: var(--text-base);
+    letter-spacing: 0.09em;
+  }
+  .brand-last {
+    letter-spacing: 0.12em;
+  }
+}
+
 .nav-bar .fa-bars {
   font-size: 1.5rem;
   color: var(--color-text-primary);
