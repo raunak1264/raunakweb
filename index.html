@@ -51,7 +51,7 @@
       </button>
     </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler" type="button" id="navbarToggler"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
@@ -823,6 +823,25 @@
   </div>
 </footer>
 
+<!-- ===================== BOTTOM MOBILE NAV ===================== -->
+<nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation">
+  <a href="#header"          class="bottom-nav-item" data-section="header">
+    <i class="fa-solid fa-house"></i><span>Home</span>
+  </a>
+  <a href="#about"           class="bottom-nav-item" data-section="about">
+    <i class="fa-solid fa-user"></i><span>About</span>
+  </a>
+  <a href="#experience"      class="bottom-nav-item" data-section="experience">
+    <i class="fa-solid fa-briefcase"></i><span>Work</span>
+  </a>
+  <a href="#certifications"  class="bottom-nav-item" data-section="certifications">
+    <i class="fa-solid fa-certificate"></i><span>Certs</span>
+  </a>
+  <a href="#contact"         class="bottom-nav-item" data-section="contact">
+    <i class="fa-solid fa-envelope"></i><span>Contact</span>
+  </a>
+</nav>
+
 <!-- ===================== BACK TO TOP ===================== -->
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
   <i class="fa-solid fa-chevron-up"></i>
@@ -946,9 +965,30 @@
     if (statsBar) statsObserver.observe(statsBar);
   }
 
+  /* ---- Hamburger Menu Toggle ---- */
+  var navToggler  = document.getElementById('navbarToggler');
+  var navMenu     = document.getElementById('navbarNav');
+
+  if (navToggler && navMenu) {
+    navToggler.addEventListener('click', function () {
+      var isOpen = navMenu.classList.toggle('show');
+      navToggler.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      navToggler.querySelector('i').className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+
+    navMenu.querySelectorAll('.nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navMenu.classList.remove('show');
+        navToggler.setAttribute('aria-expanded', 'false');
+        navToggler.querySelector('i').className = 'fa-solid fa-bars';
+      });
+    });
+  }
+
   /* ---- Active Nav Link on Scroll ---- */
   var sectionIds = ['header', 'stats', 'about', 'skills', 'experience', 'certifications', 'projects', 'education', 'contact'];
-  var navLinks = document.querySelectorAll('.nav-link');
+  var navLinks       = document.querySelectorAll('.nav-link');
+  var bottomNavItems = document.querySelectorAll('.bottom-nav-item');
 
   function updateActiveNav() {
     var scrollPos = window.scrollY + 120;
@@ -962,6 +1002,10 @@
           link.classList.remove('active');
           var href = link.getAttribute('href');
           if (href === '#' + id) link.classList.add('active');
+        });
+        bottomNavItems.forEach(function (item) {
+          item.classList.remove('active');
+          if (item.getAttribute('data-section') === id) item.classList.add('active');
         });
       }
     });
