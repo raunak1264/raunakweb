@@ -1,6 +1,6 @@
 # Raunak Kapoor — Portfolio Website
 
-Personal portfolio for **Raunak Kapoor**, ServiceNow ITOM Architect with 12+ years of experience designing enterprise-scale ITOM, ITSM, and CMDB solutions. CIS-Discovery Certified. Based in Bangalore, India.
+Personal portfolio for **Raunak Kapoor**, ServiceNow ITOM Developer with 12+ years of experience designing enterprise-scale ITOM, ITSM, and CMDB solutions. CIS-Discovery Certified. Based in Bangalore, India.
 
 ## Live Demo
 
