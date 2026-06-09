@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Local-only assets (resume is served from Google Drive)
+assets/
+
 .claude/
 test-results/
 
