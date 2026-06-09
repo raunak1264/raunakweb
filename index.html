@@ -38,6 +38,10 @@
 </head>
 <body>
 
+<!-- Scroll progress + film-grain overlays (decorative) -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
 <!-- ===================== NAVBAR ===================== -->
 <div class="nav-bar" id="mainNav">
   <nav class="navbar navbar-expand-lg">
@@ -77,6 +81,11 @@
 
 <!-- ===================== HERO ===================== -->
 <section id="header">
+  <div class="hero-aurora" aria-hidden="true">
+    <span class="blob-1"></span>
+    <span class="blob-2"></span>
+    <span class="blob-3"></span>
+  </div>
   <div class="container">
     <div class="row align-items-center" style="min-height:100svh; min-height:100vh; padding-top:80px;">
 
@@ -818,7 +827,7 @@
         </a>
       </div>
     </div>
-    <p class="footer-bottom">Made with <i class="fa-solid fa-heart"></i> by Raunak Kapoor</p>
+    <p class="footer-bottom">Designed &amp; developed by Raunak Kapoor &middot; &copy; <span id="footYear">2026</span></p>
   </div>
 </footer>
 
@@ -1027,6 +1036,92 @@
       window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
     });
   });
+
+})();
+</script>
+
+<!-- ===================== PREMIUM INTERACTIONS ===================== -->
+<script>
+(function () {
+  'use strict';
+
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Keep footer copyright year current ---- */
+  var footYear = document.getElementById('footYear');
+  if (footYear) footYear.textContent = new Date().getFullYear();
+
+  /* ---- Scroll progress bar ---- */
+  var progress = document.getElementById('scrollProgress');
+  function updateProgress() {
+    if (!progress) return;
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - doc.clientHeight;
+    var ratio = max > 0 ? window.scrollY / max : 0;
+    progress.style.transform = 'scaleX(' + Math.min(1, Math.max(0, ratio)) + ')';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+  updateProgress();
+
+  /* ---- Cursor-tracking spotlight on cards ---- */
+  var glowSelector = '.project-card, .skill-group, .cert-card, .expertise-card,' +
+    '.contact-card, .edu-card, .edu-secondary-card, .timeline-card, .cert-featured';
+
+  document.querySelectorAll(glowSelector).forEach(function (card) {
+    var glow = document.createElement('span');
+    glow.className = 'card-spotlight';
+    glow.setAttribute('aria-hidden', 'true');
+    card.insertBefore(glow, card.firstChild);
+  });
+
+  if (window.matchMedia && window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener('pointermove', function (e) {
+      var card = e.target.closest(glowSelector);
+      if (!card) return;
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }, { passive: true });
+  }
+
+  if (reduceMotion) return;   /* skip pointer-driven motion below */
+
+  /* ---- Magnetic buttons ---- */
+  var magnets = document.querySelectorAll(
+    '.btn-primary-hero, .btn-ghost-hero, .btn-hire, .btn-resume'
+  );
+  magnets.forEach(function (btn) {
+    btn.addEventListener('pointermove', function (e) {
+      var r = btn.getBoundingClientRect();
+      var x = (e.clientX - r.left - r.width / 2) * 0.3;
+      var y = (e.clientY - r.top - r.height / 2) * 0.4;
+      btn.style.setProperty('--bx', x.toFixed(1) + 'px');
+      btn.style.setProperty('--by', y.toFixed(1) + 'px');
+    });
+    btn.addEventListener('pointerleave', function () {
+      btn.style.setProperty('--bx', '0px');
+      btn.style.setProperty('--by', '0px');
+    });
+  });
+
+  /* ---- Aurora parallax (follows cursor across hero) ---- */
+  var aurora = document.querySelector('.hero-aurora');
+  var hero = document.getElementById('header');
+  if (aurora && hero) {
+    hero.addEventListener('pointermove', function (e) {
+      var r = hero.getBoundingClientRect();
+      var dx = (e.clientX - r.left) / r.width - 0.5;
+      var dy = (e.clientY - r.top) / r.height - 0.5;
+      aurora.style.setProperty('--ax', (dx * 36).toFixed(1) + 'px');
+      aurora.style.setProperty('--ay', (dy * 36).toFixed(1) + 'px');
+    });
+    hero.addEventListener('pointerleave', function () {
+      aurora.style.setProperty('--ax', '0px');
+      aurora.style.setProperty('--ay', '0px');
+    });
+  }
 
 })();
 </script>
